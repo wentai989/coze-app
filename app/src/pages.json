@@ -1,0 +1,146 @@
+{
+  "pages": [
+    // {
+    //   "path": "pages/index",
+    //   "style": {
+    //     "navigationBarTitleText": "首页",
+    //     "navigationStyle": "custom"
+    //   }
+    // },
+    {
+      "path": "pages/app/index",
+      "style": {
+        "navigationBarTitleText": "应用列表",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/app/detail",
+      "style": {
+        "navigationBarTitleText": "应用详情",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/app/chat",
+      "style": {
+        "navigationBarTitleText": "应用聊天",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/app/work",
+      "style": {
+        "navigationBarTitleText": "工作流",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/app/result",
+      "style": {
+        "navigationBarTitleText": "运行记录",
+        "navigationBarBackgroundColor": "#0b0f12",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/user/index",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/user/agreement",
+      "style": {
+        "navigationBarTitleText": "用户协议",
+        "navigationBarBackgroundColor": "#0b0f12",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/user/privacy",
+      "style": {
+        "navigationBarTitleText": "隐私政策",
+        "navigationBarBackgroundColor": "#0b0f12",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/user/order",
+      "style": {
+        "navigationBarTitleText": "订单记录",
+        "navigationBarBackgroundColor": "#0b0f12",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/login",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "navigationBarBackgroundColor": "#0b0f12",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/log",
+      "style": {
+        "navigationBarTitleText": "使用记录",
+        "navigationBarBackgroundColor": "#0b0f12",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/code",
+      "style": {
+        "navigationBarTitleText": "卡密兑换",
+        "navigationBarBackgroundColor": "#0b0f12",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/extend/index",
+      "style": {
+        "navigationBarTitleText": "分销中心",
+        "navigationBarBackgroundColor": "#0b0f12",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/extend/log",
+      "style": {
+        "navigationBarTitleText": "佣金明细",
+        "navigationBarBackgroundColor": "#0b0f12",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/user/power",
+      "style": {
+        "navigationBarTitleText": "算力消耗",
+        "navigationBarBackgroundColor": "#0b0f12",
+        "navigationBarTextStyle": "white"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "weapp-tailwindcss",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/app/index"
+      },
+      {
+        "pagePath": "pages/log"
+      },
+      {
+        "pagePath": "pages/user/index"
+      }
+    ]
+  }
+}
