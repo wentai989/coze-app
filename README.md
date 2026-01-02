@@ -1,5 +1,5 @@
-# coze-app 项目介绍
-基于Coze（扣子）API封装，提供开箱即用的AI智能体与工作流商业化变现解决方案
+# cozeFz
+cozeFz 基于Coze（扣子）API封装，提供开箱即用的AI智能体与工作流商业化变现解决方案
 
 ## 🚀 功能特性
 
@@ -49,6 +49,16 @@ npm run dev:mp-weixin           # 编译开发
 
 Laravel 12, MySQL, Owl Admin, EasyWeChat, UniApp, Vue 3, TypeScript, Tailwind CSS
 
-## 微信小程序二维码演示
+## wx小程序二维码演示
 
 ![小程序二维码](https://github.com/wentai989/coze-app/blob/main/gh_64f0e18948c7_258.jpg)
+
+
+## ℹ️ 说明与交流
+
+本项目完全开源免费，仅供学习与交流使用。
+如用于商业用途，请自行评估风险，作者不承担任何法律责任。
+
+项目初衷是为了更好地服务 Coze 封装变现客户，提供持续的维护与技术支持。欢迎志同道合的朋友交流探讨。
+
+WxChat: `Z2639827159`
