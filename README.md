@@ -50,6 +50,6 @@ npm run dev:mp-weixin           # 编译开发
 
 Laravel 12, MySQL, Owl Admin, EasyWeChat, UniApp, Vue 3, TypeScript, Tailwind CSS
 
-## 二维码演示
+## 微信小程序二维码演示
 
 ![小程序二维码](https://github.com/wentai989/coze-app/blob/main/gh_64f0e18948c7_258.jpg)
