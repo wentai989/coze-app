@@ -49,12 +49,12 @@ npm run dev:mp-weixin           # 编译开发
 
 Laravel 12, MySQL, Owl Admin, EasyWeChat, UniApp, Vue 3, TypeScript, Tailwind CSS
 
-## wx小程序二维码演示
+## WX小程序二维码演示
 
 ![小程序二维码](https://github.com/wentai989/coze-app/blob/main/gh_64f0e18948c7_258.jpg)
 
 
-## ℹ️ 说明与交流
+## ℹ️ 关于说明
 
 本项目完全开源免费，仅供学习与交流使用。
 如用于商业用途，请自行评估风险，作者不承担任何法律责任。
