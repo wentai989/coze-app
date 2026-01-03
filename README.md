@@ -14,10 +14,12 @@ cozeFz 基于Coze（扣子）API封装，提供开箱即用的AI智能体与工�
 ## 🛠️ 快速部署
 
 **环境要求**: PHP >= 8.2, Node.js >= 18.0, MySQL >= 5.7, Composer
+###
 
 ### 1. 后端 (API)
 
 ```bash
+git clone https://github.com/wentai989/cozeFz.git
 cd api
 cp .env.example .env            # 配置数据库连接
 composer install                # 安装依赖
@@ -26,7 +28,7 @@ php artisan db:seed             # 填充初始数据
 php artisan serve               # 启动服务 (默认 http://127.0.0.1:8000)
 ```
 
-> 管理后台: `/admin`
+> 管理后台: `http://127.0.0.1:8000/admin`
 
 ### 2. 前端 (小程序)
 
