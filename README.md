@@ -20,7 +20,7 @@ cozeFz 基于Coze（扣子）API封装，提供开箱即用的AI智能体与工�
 
 ```bash
 git clone https://github.com/wentai989/cozeFz.git
-cd cozeFz/api
+cd api
 cp .env.example .env            # 配置数据库，存储方式 连接
 composer install                # 安装依赖
 php artisan migrate             # 迁移数据库结构
@@ -33,7 +33,7 @@ php artisan serve               # 启动服务 (默认 http://127.0.0.1:8000)
 ### 2. 前端 (小程序)
 
 ```bash
-cd cozeFz/app
+cd app
 pnpm install                    # 安装依赖
 cp .env.example .env            # 配置Api基础信息
 npm run dev:mp-weixin           # 编译开发
