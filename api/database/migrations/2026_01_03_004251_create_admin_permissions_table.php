@@ -12,15 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('admin_permissions', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name')->unique();
-            $table->string('slug')->unique();
+            $table->bigIncrements('id');
+            $table->string('name', 50)->unique();
+            $table->string('slug', 50)->unique();
             $table->text('http_method')->nullable();
             $table->text('http_path')->nullable();
             $table->integer('custom_order')->default(0);
             $table->integer('parent_id')->default(0);
-            $table->dateTime('created_at')->nullable();
-            $table->dateTime('updated_at')->nullable();
+            $table->timestamps();
         });
     }
 

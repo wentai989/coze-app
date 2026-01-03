@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('admin_roles', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name')->unique();
-            $table->string('slug')->unique();
-            $table->dateTime('created_at')->nullable();
-            $table->dateTime('updated_at')->nullable();
+        Schema::create('admin_role_users', function (Blueprint $table) {
+            $table->integer('role_id');
+            $table->integer('user_id');
+            $table->timestamps();
+
+            $table->index(['role_id', 'user_id']);
         });
     }
 
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('admin_roles');
+        Schema::dropIfExists('admin_role_users');
     }
 };

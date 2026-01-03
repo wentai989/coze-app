@@ -12,15 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('admin_relationships', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('model');
-            $table->string('title');
-            $table->string('type');
-            $table->string('remark')->nullable();
-            $table->text('args')->nullable();
-            $table->text('extra')->nullable();
-            $table->dateTime('created_at')->nullable();
-            $table->dateTime('updated_at')->nullable();
+            $table->bigIncrements('id');
+            $table->string('model')->comment('模型');
+            $table->string('title')->comment('关联名称');
+            $table->string('type')->comment('关联类型');
+            $table->string('remark')->nullable()->comment('关联名称');
+            $table->text('args')->nullable()->comment('关联参数');
+            $table->text('extra')->nullable()->comment('额外参数');
+            $table->timestamps();
         });
     }
 

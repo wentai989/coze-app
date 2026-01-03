@@ -12,11 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('admin_extensions', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name')->unique();
-            $table->integer('is_enabled')->default(0);
-            $table->dateTime('created_at')->nullable();
-            $table->dateTime('updated_at')->nullable();
+            $table->bigIncrements('id');
+            $table->string('name', 100)->unique();
+            $table->tinyInteger('is_enabled')->default(0);
+            $table->timestamps();
         });
     }
 

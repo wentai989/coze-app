@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('admin_role_users', function (Blueprint $table) {
+        Schema::create('admin_role_permissions', function (Blueprint $table) {
             $table->integer('role_id');
-            $table->integer('user_id');
-            $table->dateTime('created_at')->nullable();
-            $table->dateTime('updated_at')->nullable();
+            $table->integer('permission_id');
+            $table->timestamps();
 
-            $table->index(['role_id', 'user_id']);
+            $table->index(['role_id', 'permission_id']);
         });
     }
 
@@ -26,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('admin_role_users');
+        Schema::dropIfExists('admin_role_permissions');
     }
 };

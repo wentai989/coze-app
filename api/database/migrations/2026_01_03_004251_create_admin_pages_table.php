@@ -12,12 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('admin_pages', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('title');
-            $table->string('sign');
-            $table->text('schema');
-            $table->dateTime('created_at')->nullable();
-            $table->dateTime('updated_at')->nullable();
+            $table->bigIncrements('id');
+            $table->string('title')->comment('页面名称');
+            $table->string('sign')->comment('页面标识');
+            $table->longText('schema')->comment('页面结构');
+            $table->timestamps();
         });
     }
 

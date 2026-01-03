@@ -12,14 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('admin_apis', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('title');
-            $table->string('path');
-            $table->string('template');
-            $table->integer('enabled')->default(1);
-            $table->text('args')->nullable();
-            $table->dateTime('created_at')->nullable();
-            $table->dateTime('updated_at')->nullable();
+            $table->bigIncrements('id');
+            $table->string('title')->comment('接口名称');
+            $table->string('path')->comment('接口路径');
+            $table->string('template')->comment('接口模板');
+            $table->tinyInteger('enabled')->default(1)->comment('是否启用');
+            $table->longText('args')->nullable()->comment('接口参数');
+            $table->timestamps();
         });
     }
 

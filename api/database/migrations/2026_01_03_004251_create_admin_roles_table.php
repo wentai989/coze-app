@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('admin_settings', function (Blueprint $table) {
-            $table->string('key')->default('');
-            $table->text('values')->nullable();
-            $table->dateTime('created_at')->nullable();
-            $table->dateTime('updated_at')->nullable();
+        Schema::create('admin_roles', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name', 50)->unique();
+            $table->string('slug', 50)->unique();
+            $table->timestamps();
         });
     }
 
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('admin_settings');
+        Schema::dropIfExists('admin_roles');
     }
 };
