@@ -1,4 +1,5 @@
 # 依赖目录
+.env
 node_modules/
 
 # 构建输出目录
