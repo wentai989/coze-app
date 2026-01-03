@@ -13,11 +13,19 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             AdminUsersTableSeeder::class,
-            AdminMenusTableSeeder::class,
+            AdminRolesTableSeeder::class,
             AdminPermissionsTableSeeder::class,
+            AdminMenusTableSeeder::class,
             AdminRoleUsersTableSeeder::class,
             AdminRolePermissionsTableSeeder::class,
+            AdminPermissionMenuTableSeeder::class,
             AdminSettingsTableSeeder::class,
+            AdminExtensionsTableSeeder::class,
+            AdminApisTableSeeder::class,
+            AdminPagesTableSeeder::class,
+            AdminRelationshipsTableSeeder::class,
+            AdminCodeGeneratorsTableSeeder::class,
+            UsersTableSeeder::class,
         ]);
     }
 }
